@@ -30,7 +30,7 @@ background = "#eed49f" # {< replace_quoted(themes.alacritty.hints.start.backgrou
 
 [colors.hints.end]
 foreground = "#24273a" # {< replace_quoted(themes.alacritty.hints.end.foreground) >}
-background = "#a5adcb" # {< replace_quoted(themes.alacritty.hints.end.background) >}
+background = "#b5adcb" # {< replace_quoted(themes.alacritty.hints.end.background) >}
 
 [colors.selection]
 text = "#24273a" # {< replace_quoted(themes.alacritty.selection.text) >}
