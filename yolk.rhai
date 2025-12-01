@@ -23,6 +23,6 @@ export let eggs = #{
             "hyprpaper.conf": "~/.config/hypr/hyprpaper.conf",
             "walls.jpg": "~/.config/hypr/walls.jpg",
         },
-        main_file: "hyprland.conf",
+        main_file: "themes/theme.conf",
     }
 };
