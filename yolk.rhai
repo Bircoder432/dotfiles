@@ -39,7 +39,7 @@ export let eggs = #{
     helix: #{
         targets: #{
             "config.toml": "~/.config/helix/config.toml",
-            "themes/themes.toml": "~/.config/helix/themes/themes.toml"
+            "themes/theme.toml": "~/.config/helix/themes/theme.toml"
         },
         main_file: "config.toml"
     }
