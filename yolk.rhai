@@ -26,22 +26,3 @@ export let eggs = #{
         main_file: "hyprland.conf",
     }
 };
-
-fn after_equal(new_value) {
-    let pattern = "^(\\s*\\w+\\s*=\\s*)([^#\\n]*)([#].*)?$";
-    let replacement = "${1}" + new_value + "${3}";
-    let text = get_yolk_text();
-    regex_replace(pattern, text, replacement)
-
-}
-
-
-
-fn after_rgb_equal(new_rgb_value) {
-    let pattern = "^(\\s*\\w+\\s*=\\s*rgb\\()([^)]*)(\\).*)$";
-
-    let replacement = "${1}" + new_rgb_value + "${3}";
-
-    let text = get_yolk_text();
-    regex_replace(pattern, text, replacement)
-}

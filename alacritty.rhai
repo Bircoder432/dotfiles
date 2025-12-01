@@ -1,6 +1,6 @@
 import "palettes" as palettes;
 
-print(palettes::palettes);
+
 
 export let themes = #{
     catppuccin: #{
