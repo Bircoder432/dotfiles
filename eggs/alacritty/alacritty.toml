@@ -1,0 +1,12 @@
+general.import = [
+  "~/.config/alacritty/alacritty_theme.toml"
+]
+
+[terminal]
+shell = "/usr/bin/fish"
+
+[window]
+opacity = 0.5
+
+[font]
+normal = { family = "JetBrains Mono", style = "medium" }

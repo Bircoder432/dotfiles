@@ -1,0 +1,65 @@
+[colors.primary]
+background = "#24273a" # {< replace_quoted(themes.alacritty.background) >}
+foreground = "#cad3f5" # {< replace_quoted(themes.alacritty.foreground) >}
+dim_foreground = "#8087a2" # {< replace_quoted(themes.alacritty.dim_foreground) >}
+bright_foreground = "#cad3f5" # {< replace_quoted(themes.alacritty.bright_foreground) >}
+
+[colors.cursor]
+text = "#24273a" # {< replace_quoted(themes.alacritty.cursor.text) >}
+cursor = "#f4dbd6" # {< replace_quoted(themes.alacritty.cursor.cursor) >}
+
+[colors.vi_mode_cursor]
+text = "#24273a" # {< replace_quoted(themes.alacritty.vi_mode_cursor.text) >}
+cursor = "#b7bdf8" # {< replace_quoted(themes.alacritty.vi_mode_cursor.cursor) >}
+
+[colors.search.matches]
+foreground = "#24273a" # {< replace_quoted(themes.alacritty.search.matches.foreground) >}
+background = "#a5adcb" # {< replace_quoted(themes.alacritty.search.matches.background) >}
+
+[colors.search.focused_match]
+foreground = "#24273a" # {< replace_quoted(themes.alacritty.search.focused_match.foreground) >}
+background = "#a6da95" # {< replace_quoted(themes.alacritty.search.focused_match.background) >}
+
+[colors.footer_bar]
+foreground = "#24273a" # {< replace_quoted(themes.alacritty.footer_bar.foreground) >}
+background = "#a5adcb" # {< replace_quoted(themes.alacritty.footer_bar.background) >}
+
+[colors.hints.start]
+foreground = "#24273a" # {< replace_quoted(themes.alacritty.hints.start.foreground) >}
+background = "#eed49f" # {< replace_quoted(themes.alacritty.hints.start.background) >}
+
+[colors.hints.end]
+foreground = "#24273a" # {< replace_quoted(themes.alacritty.hints.end.foreground) >}
+background = "#a5adcb" # {< replace_quoted(themes.alacritty.hints.end.background) >}
+
+[colors.selection]
+text = "#24273a" # {< replace_quoted(themes.alacritty.selection.text) >}
+background = "#f4dbd6" # {< replace_quoted(themes.alacritty.selection.background) >}
+
+[colors.normal]
+black = "#494d64" # {< replace_quoted(themes.alacritty.normal.black) >}
+red = "#ed8796" # {< replace_quoted(themes.alacritty.normal.red) >}
+green = "#a6da95" # {< replace_quoted(themes.alacritty.normal.green) >}
+yellow = "#eed49f" # {< replace_quoted(themes.alacritty.normal.yellow) >}
+blue = "#8aadf4" # {< replace_quoted(themes.alacritty.normal.blue) >}
+magenta = "#f5bde6" # {< replace_quoted(themes.alacritty.normal.magenta) >}
+cyan = "#8bd5ca" # {< replace_quoted(themes.alacritty.normal.cyan) >}
+white = "#b8c0e0" # {< replace_quoted(themes.alacritty.normal.white) >}
+
+[colors.bright]
+black = "#5b6078" # {< replace_quoted(themes.alacritty.bright.black) >}
+red = "#ed8796" # {< replace_quoted(themes.alacritty.bright.red) >}
+green = "#a6da95" # {< replace_quoted(themes.alacritty.bright.green) >}
+yellow = "#eed49f" # {< replace_quoted(themes.alacritty.bright.yellow) >}
+blue = "#8aadf4" # {< replace_quoted(themes.alacritty.bright.blue) >}
+magenta = "#f5bde6" # {< replace_quoted(themes.alacritty.bright.magenta) >}
+cyan = "#8bd5ca" # {< replace_quoted(themes.alacritty.bright.cyan) >}
+white = "#a5adcb" # {< replace_quoted(themes.alacritty.bright.white) >}
+
+[[colors.indexed_colors]]
+index = 16
+color = "#f5a97f" # {< replace_quoted(themes.alacritty.indexed_colors[0]) >}
+
+[[colors.indexed_colors]]
+index = 17
+color = "#f4dbd6" # {< replace_quoted(themes.alacritty.indexed_colors[1]) >}
