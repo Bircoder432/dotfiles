@@ -30,7 +30,7 @@ export let eggs = #{
     wofi: #{
         targets: #{
             "config": "~/.config/wofi/config",
-            "wofi_theme.conf": "~/.config/wofi/style.css",
+            "style.css": "~/.config/wofi/style.css",
         },
         main_file: "config"
     }
