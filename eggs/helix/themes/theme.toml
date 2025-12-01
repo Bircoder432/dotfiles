@@ -1,0 +1,161 @@
+# Helix theme
+"attribute" = "color8"
+
+"type" = "color8"
+"type.enum.variant" = "color10"
+
+"constructor" = "color12"
+
+"constant" = "color7"
+"constant.character" = "color10"
+"constant.character.escape" = "color3"
+
+"string" = "color9"
+"string.regexp" = "color3"
+"string.special" = "color13"
+"string.special.symbol" = "color5"
+
+"comment" = { fg = "overlay2", modifiers = ["italic"] }
+
+"variable" = "text"
+"variable.parameter" = { fg = "color6", modifiers = ["italic"] }
+"variable.builtin" = "color5"
+"variable.other.member" = "color13"
+
+"label" = "color12"
+
+"punctuation" = "overlay2"
+"punctuation.special" = "color11"
+
+"keyword" = "color4"
+"keyword.control.conditional" = { fg = "color4", modifiers = ["italic"] }
+
+"operator" = "color11"
+
+"function" = "color13"
+"function.macro" = "color1"
+
+"tag" = "color13"
+
+"namespace" = { fg = "color8", modifiers = ["italic"] }
+
+"special" = "color13"
+
+"markup.heading.1" = "color5"
+"markup.heading.2" = "color7"
+"markup.heading.3" = "color8"
+"markup.heading.4" = "color9"
+"markup.heading.5" = "color12"
+"markup.heading.6" = "color14"
+"markup.list" = "color10"
+"markup.list.unchecked" = "overlay2"
+"markup.list.checked" = "color9"
+"markup.bold" = { fg = "color5", modifiers = ["bold"] }
+"markup.italic" = { fg = "color5", modifiers = ["italic"] }
+"markup.link.url" = { fg = "color13", modifiers = ["italic", "underlined"] }
+"markup.link.text" = "color14"
+"markup.raw" = "color9"
+"markup.quote" = "color3"
+
+"diff.plus" = "color9"
+"diff.minus" = "color5"
+"diff.delta" = "color13"
+
+# UI - ПРОЗРАЧНЫЕ ЭЛЕМЕНТЫ
+"ui.background" = { bg = "none" }
+"ui.window" = { bg = "none" }
+"ui.bufferline.background" = { bg = "none" }
+
+"ui.linenr" = { fg = "surface2" }
+"ui.linenr.selected" = { fg = "color14" }
+
+"ui.statusline" = { fg = "text_secondary", bg = "surface" }
+"ui.statusline.inactive" = { fg = "surface3", bg = "surface" }
+"ui.statusline.normal" = { fg = "background", bg = "color1", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "background", bg = "color9", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "background", bg = "color14", modifiers = ["bold"] }
+
+"ui.popup" = { fg = "text", bg = "surface1" }
+"ui.help" = { fg = "overlay2", bg = "surface1" }
+
+"ui.bufferline" = { fg = "text_tertiary", bg = "surface" }
+"ui.bufferline.active" = { fg = "color4", bg = "background", underline = { color = "color4", style = "line" } }
+
+"ui.text" = "text"
+"ui.text.focus" = { fg = "text", bg = "surface1", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "overlay1" }
+"ui.text.directory" = { fg = "color13" }
+
+"ui.virtual" = "overlay0"
+"ui.virtual.ruler" = { bg = "surface1" }
+"ui.virtual.indent-guide" = "surface1"
+"ui.virtual.inlay-hint" = { fg = "surface2", bg = "surface" }
+"ui.virtual.jump-label" = { fg = "color1", modifiers = ["bold"] }
+
+"ui.selection" = { bg = "surface2" }
+
+"ui.cursor" = { fg = "background", bg = "cursor_secondary" }
+"ui.cursor.primary" = { fg = "background", bg = "color1" }
+"ui.cursor.match" = { fg = "color7", modifiers = ["bold"] }
+
+"ui.cursor.primary.normal" = { fg = "background", bg = "color1" }
+"ui.cursor.primary.insert" = { fg = "background", bg = "color9" }
+"ui.cursor.primary.select" = { fg = "background", bg = "color14" }
+
+"ui.cursor.normal" = { fg = "background", bg = "cursor_normal" }
+"ui.cursor.insert" = { fg = "background", bg = "cursor_insert" }
+"ui.cursor.select" = { fg = "background", bg = "cursor_select" }
+
+"ui.cursorline.primary" = { bg = "cursorline" }
+
+"ui.highlight" = { bg = "surface2", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "overlay2", bg = "surface1" }
+"ui.menu.selected" = { fg = "text", bg = "surface2", modifiers = ["bold"] }
+
+"diagnostic.error" = { underline = { color = "color5", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "color8", style = "curl" } }
+"diagnostic.info" = { underline = { color = "color11", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "color10", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+error = "color5"
+warning = "color8"
+info = "color11"
+hint = "color10"
+
+rainbow = ["color5", "color7", "color8", "color9", "color12", "color14"]
+
+[palette]
+color1 = "#f4dbd6" # {< replace_color("#"+themes.helix.color1) >}
+color2 = "#f0c6c6" # {< replace_color("#"+themes.helix.color2) >}
+color3 = "#f5bde6" # {< replace_color("#"+themes.helix.color3) >}
+color4 = "#c6a0f6" # {< replace_color("#"+themes.helix.color4) >}
+color5 = "#ed8796" # {< replace_color("#"+themes.helix.color5) >}
+color6 = "#ee99a0" # {< replace_color("#"+themes.helix.color6) >}
+color7 = "#f5a97f" # {< replace_color("#"+themes.helix.color7) >}
+color8 = "#eed49f" # {< replace_color("#"+themes.helix.color8) >}
+color9 = "#a6da95" # {< replace_color("#"+themes.helix.color9) >}
+color10 = "#8bd5ca" # {< replace_color("#"+themes.helix.color10) >}
+color11 = "#91d7e3" # {< replace_color("#"+themes.helix.color11) >}
+color12 = "#7dc4e4" # {< replace_color("#"+themes.helix.color12) >}
+color13 = "#8aadf4" # {< replace_color("#"+themes.helix.color13) >}
+color14 = "#b7bdf8" # {< replace_color("#"+themes.helix.color14) >}
+text = "#cad3f5" # {< replace_color("#"+themes.helix.text) >}
+text_secondary = "#b8c0e0" # {< replace_color("#"+themes.helix.text_secondary) >}
+text_tertiary = "#a5adcb" # {< replace_color("#"+themes.helix.text_tertiary) >}
+overlay1 = "#939ab7" # {< replace_color("#"+themes.helix.overlay1) >}
+overlay2 = "#8087a2" # {< replace_color("#"+themes.helix.overlay2) >}
+overlay3 = "#6e738d" # {< replace_color("#"+themes.helix.overlay3) >}
+surface1 = "#363a4f" # {< replace_color("#"+themes.helix.surface1) >}
+surface2 = "#494d64" # {< replace_color("#"+themes.helix.surface2) >}
+surface3 = "#5b6078" # {< replace_color("#"+themes.helix.surface3) >}
+background = "#24273a" # {< replace_color("#"+themes.helix.background) >}
+surface = "#1e2030" # {< replace_color("#"+themes.helix.surface) >}
+shadow = "#181926" # {< replace_color("#"+themes.helix.shadow) >}
+
+cursorline = "#303347" # {< replace_color("#"+themes.helix.cursorline) >}
+cursor_secondary = "#b6a6a7" # {< replace_color("#"+themes.helix.cursor_secondary) >}
+cursor_select = "#8b91bf" # {< replace_color("#"+themes.helix.cursor_select) >}
+cursor_normal = "#b6a6a7" # {< replace_color("#"+themes.helix.cursor_normal) >}
+cursor_insert = "#80a57a" # {< replace_color("#"+themes.helix.cursor_insert) >}

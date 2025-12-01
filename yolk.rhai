@@ -1,11 +1,13 @@
 import "alacritty" as alacritty;
 import "hypr" as hypr;
 import "wofi" as wofi;
+import "helix" as helix;
 
 export let themes = #{
     alacritty: alacritty::themes.catppuccin.macchiato,
     hypr: hypr::themes.catppuccin.macchiato,
     wofi: wofi::themes.catppuccin.macchiato,
+    helix: helix::themes.catppuccin.macchiato,
 
 };
 export let eggs = #{
@@ -33,5 +35,12 @@ export let eggs = #{
             "style.css": "~/.config/wofi/style.css",
         },
         main_file: "config"
+    },
+    helix: #{
+        targets: #{
+            "config.toml": "~/.config/helix/config.toml",
+            "themes/themes.toml": "~/.config/helix/themes/themes.toml"
+        },
+        main_file: "config.toml"
     }
 };
