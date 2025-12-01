@@ -1,0 +1,85 @@
+/* ~/.config/wofi/style.css — BASE 50% LIQUID ASS, БЕЗ ФЛАМИНГО, КАК ТЫ ЛЮБИШЬ */
+
+@define-color rosewater #f4dbd6;
+@define-color flamingo  #f0c6c6;
+@define-color mauve     #c6a0f6;
+@define-color pink      #f5bde6;
+@define-color lavender  #b7bdf8;
+@define-color text      #cad3f5;
+@define-color base      #24273a;
+@define-color mantle    #1e2030;
+@define-color crust     #181926;
+
+/* 50% BASE — НИКАКОГО ФЛАМИНГО, ТОЛЬКО BASE */
+@define-color base-50 rgba(36, 39, 58, 0.50);
+
+* {
+  font-family: 'Inconsolata Nerd Font', monospace;
+  font-size: 14.5px;
+}
+
+/* ГЛАВНОЕ ОКНО — BASE 50% + БЛЮР */
+window {
+  margin: 0px;
+  padding: 12px;
+  border: 0.18em solid @pink;
+  border-radius: 10px;
+  background-color: @base-50;
+  backdrop-filter: blur(40px) saturate(180%);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.42s ease-out;
+}
+
+@keyframes slideIn {
+  0%   { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+#inner-box, #outer-box, #scroll {
+  margin: 6px;
+  padding: 10px;
+  background: transparent;
+}
+
+#input {
+  margin: 8px 24px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgba(36, 39, 58, 0.70);  /* base потемнее */
+  color: @text;
+  font-weight: bold;
+}
+
+#input:focus {
+  background-color: rgba(198, 160, 246, 0.32);
+  outline: 2.5px solid @pink;
+}
+
+#entry {
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin: 4px 0;
+  background: transparent;
+  transition: all 0.22s ease;
+}
+
+#entry:selected {
+  background: rgba(198, 160, 246, 0.45) !important;
+  border: 0.16em solid @pink;
+  border-radius: 8px;
+}
+
+#entry:selected #text {
+  color: @text;
+  font-weight: bold;
+}
+
+#text {
+  color: @text;
+  margin-left: 8px;
+}
+
+#entry:drop(active) {
+  background-color: @mauve !important;
+}

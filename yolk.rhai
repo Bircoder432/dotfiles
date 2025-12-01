@@ -1,9 +1,11 @@
 import "alacritty" as alacritty;
 import "hypr" as hypr;
+import "wofi" as wofi;
 
 export let themes = #{
     alacritty: alacritty::themes.catppuccin.macchiato,
     hypr: hypr::themes.catppuccin.macchiato,
+    wofi: wofi::themes.catppuccin.macchiato,
 
 };
 export let eggs = #{
@@ -24,5 +26,12 @@ export let eggs = #{
             "walls.jpg": "~/.config/hypr/walls.jpg",
         },
         main_file: "themes/theme.conf",
+    },
+    wofi: #{
+        targets: #{
+            "config": "~/.config/wofi/config",
+            "wofi_theme.conf": "~/.config/wofi/style.css",
+        },
+        main_file: "config"
     }
 };
